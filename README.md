@@ -21,8 +21,7 @@ This project aims to develop a web-based application for disease prediction usin
 ## Installation
 
 1. Clone the repository:
-
-git clone https://github.com/Pooja22052/Disease-prediction.git
+  git clone https://github.com/Pooja22052/Disease-prediction.git
 
 2.Install the necessary python libraries
 
