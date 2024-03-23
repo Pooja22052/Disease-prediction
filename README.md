@@ -22,8 +22,8 @@ This project aims to develop a web-based application for disease prediction usin
 
 1. Clone the repository: git clone https://github.com/Pooja22052/Disease-prediction.git
 
-2.Install the necessary python libraries
+2. Install the necessary python libraries
 
-3.cd disease-prediction
+3. cd disease-prediction
 
 4. Type in terminal- flask main.py
