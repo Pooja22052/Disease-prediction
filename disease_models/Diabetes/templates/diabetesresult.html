@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <title>Diabetes Result</title>
+</head>
+<style>
+  #main-footer {
+    color: #FFFFFF;
+    font-family: "Segoe UI";
+    background: #2B2B2B;
+    text-align: center;
+    margin-top: 75px;
+    padding: 16px;
+    bottom: 8px;
+  }
+
+  .img_holder img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+
+    h2,
+    h3,
+    p {
+      text-align: center;
+    }
+
+    .mt-4 {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 200px
+    }
+  }
+</style>
+
+<body>
+
+  <header class="site-header">
+
+
+  </header>
+
+  <div class="container">
+
+
+    <h2>2. Diabetes</h2>
+    <h2 style="color:red;"> {{ prediction_text }}</h2>
+    <div style="text-align: center; margin-top: 20px ; margin-bottom: 20px;" >
+      <img style="max-width: 300px" src="https://img.freepik.com/premium-photo/measuring-glucose-level-blood-isolated-white_392895-265897.jpg" />
+    </div>
+    <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is
+      your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose
+      from food get into your cells to be used for energy.</p>
+    <h3>What health problems can people with diabetes develop? </h3>
+    <p>Over time, high blood glucose leads to problems such as</p>
+
+    <ul>
+      <li>heart disease</li>
+      <li>stroke</li>
+      <li>kidney disease</li>
+      <li>eye problems</li>
+      <li>dental disease</li>
+      <li>nerve damage</li>
+      <li>foot problems</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+
+
+</div>
+
+</body>
+
+</html>

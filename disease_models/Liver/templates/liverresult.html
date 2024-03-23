@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <title>Kidney Result</title>
+</head>
+<style>
+  #main-footer {
+    color: #FFFFFF;
+    font-family: "Segoe UI";
+    background: #2B2B2B;
+    text-align: center;
+    margin-top: 75px;
+    padding: 16px;
+    bottom: 8px;
+  }
+
+  .img_holder img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+
+    h2,
+    h3,
+    p {
+      text-align: center;
+    }
+
+    .mt-4 {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 200px
+    }
+  }
+</style>
+
+<body>
+
+
+
+  <div class="container">
+
+
+    <h2>2. Liver Disease</h2>
+    <h2 style="color:red;"> {{ prediction_text }}</h2>
+    <div style="text-align: center; margin-top: 20px ; margin-bottom: 20px;" >
+      <img style="max-width: 400px" src="https://img.freepik.com/premium-vector/liver-icon-trendy-flat-style-symbol-your-web-site-design-logo-app-ui_599062-3797.jpg?size=626&ext=jpg" />
+    </div>
+  <h3>Overview</h3>
+<p>Liver disease is any disturbance of liver function that causes illness. The liver is responsible for many critical functions within the body and should it become diseased or injured, the loss of those functions can cause significant damage to the body. Liver disease is also referred to as hepatic disease.<br>
+
+Liver disease is a broad term that covers all the potential problems that cause the liver to fail to perform its designated functions. Usually, more than 75% or three quarters of liver tissue needs to be affected before a decrease in function occurs.<br></p>
+
+<h3>Symptoms</h3>
+<p>Classic symptoms of liver disease include:</p>
+ <ul>
+  <li>nausea</li>
+  <li>vomiting</li>
+  <li>right upper quadrant abdominal pain, and </li>
+  <li>jaundice (a yellow discoloration of the skin due to elevated bilirubin concentrations in the bloodstream).</li>
+</ul>
+<br>
+<hr>
+<br>
+
+
+</div>
+
+</body>
+
+</html>
